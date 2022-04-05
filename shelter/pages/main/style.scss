@@ -45,6 +45,7 @@ h3 {
     @include font($family: Georgia, $size: 1.7rem, $weight: normal);
     line-height: 130%;
     color: $color-black;
+    cursor: pointer;
 }
 
 .button-colored {
@@ -195,7 +196,7 @@ html {
     margin: 60px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .pets__btn {
@@ -223,5 +224,12 @@ html {
 
 .card__btn {
     width: 187px;
+    text-align: center;
+}
+
+.pets__button {
+    display: block;
+    margin: auto;
+    width: 261px;
     text-align: center;
 }
