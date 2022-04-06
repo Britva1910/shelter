@@ -361,3 +361,64 @@ html {
     line-height: 18px;
     color: #B2B2B2;
 }
+
+
+/* footer */
+
+.footer {
+    background-image: url(../../assets/images/main/footer-background.jpg);
+}
+
+.layout-3-columns {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    >img {
+        margin-top: 40px;
+    }
+}
+
+.footer-inner {
+    height: 234px;
+    flex-basis: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    >:nth-child(2) {
+        margin-top: 4px;
+        margin-bottom: 40px;
+    }
+}
+
+.footer-inner-add {
+    margin-left: -24px;
+    >:nth-child(2) {
+        margin-top: -2px;
+        margin-bottom: 32px;
+    }
+}
+
+.footer-inner__title {
+    margin-top: 55px;
+    @include font($family: Georgia, $size: 3.5rem, $weight: 400);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-light;
+}
+
+.footer-inner__link {
+    display: flex;
+    align-items: center;
+    >div {
+        margin-left: 19px;
+    }
+}
+
+.footer-inner__link-content {
+    @include font($family: Georgia, $size: 2.0rem, $weight: 400);
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+}
