@@ -193,12 +193,21 @@ html {
 .about__img {
   width: 300px;
   height: 408px;
+  margin-left: 99px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   background-image: url(../../assets/images/main/about-pets.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.about-text {
+  margin-right: 90px;
+}
+
 .about__title {
+  margin-top: 16px;
+  margin-bottom: 2px;
   width: 370px;
   font-family: Georgia;
   font-size: 3.5rem;
@@ -210,12 +219,15 @@ html {
 }
 
 .about__content {
+  margin-top: 24px;
+  width: 430px;
   font-family: Arial;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5rem;
   line-height: 160%;
+  letter-spacing: 0.02px;
 }
 
 /* pets */
@@ -266,6 +278,10 @@ html {
   border-radius: 100%;
   cursor: pointer;
   /* FIXME add animation */
+}
+
+.pets__card:nth-child(1) {
+  margin: 0 10px;
 }
 
 .pets__card {
