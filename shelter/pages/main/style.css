@@ -333,25 +333,37 @@ html {
 
 /* help section */
 .help__title {
+  width: 311px;
+  margin: 80px auto 46px auto;
   text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .help__container {
-  width: 1200px;
-  margin: auto;
+  margin: 0 auto 100px auto;
+  width: 1026px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+  row-gap: 44px;
+}
+
+.help__container > :nth-child(6) {
+  margin-left: 83px;
+}
+
+.help__container > :nth-child(9) {
+  margin-right: 83px;
 }
 
 .help__card {
-  height: 113px;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,21 +381,88 @@ html {
           flex-direction: column;
 }
 
+.help__card > img {
+  margin-top: 13px;
+}
+
 .help__card-name {
-  margin-top: 10px;
+  margin-top: 31px;
   font-family: Georgia;
   font-size: 2rem;
   font-style: normal;
   font-weight: normal;
   line-height: 2rem;
+  letter-spacing: 0.06em;
 }
 
 /* Donation */
+.donation {
+  background-color: #FAFAFA;
+}
+
+.donation__wrapper {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.donation__wrapper > img {
+  margin: 92px 30px 111px 182px;
+  background: transparent;
+}
+
+.donation__title {
+  margin-top: 82px;
+  margin-bottom: 21px;
+}
+
 .donation__subtitle {
   font-family: Georgia;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.donation__btn {
+  margin-top: 20px;
+  height: 43px;
+  width: 349px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  background-color: #F1CDB3;
+  font-family: Georgia;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.donation__btn > img {
+  margin-left: 15px;
+}
+
+.donation__btn > a {
+  margin-left: 15px;
+}
+
+.description {
+  margin-top: 21px;
+  width: 380px;
+  font-family: Arial;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2rem;
+  line-height: 18px;
+  color: #B2B2B2;
 }
 /*# sourceMappingURL=style.css.map */

@@ -271,35 +271,93 @@ html {
 /* help section */
 
 .help__title {
+    width: 311px;
+    margin: 80px auto 46px auto;
     text-align: center;
+    letter-spacing: 0.06em;
 }
 
 .help__container {
-    width: 1200px;
-    margin: auto;
+    margin: 0 auto 100px auto;
+    width: 1026px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    column-gap: 80px;
+    row-gap: 44px;
+    > :nth-child(6) {
+        margin-left: 83px;
+    }
+    > :nth-child(9) {
+        margin-right: 83px;
+    }
 }
 
 .help__card {
-    height: 113px;
-    flex-basis: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    >img {
+        margin-top: 13px;
+    }
 }
 
 .help__card-name {
-    margin-top: 10px;
+    margin-top: 31px;
     @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    letter-spacing: 0.06em;
 }
 
 
 /* Donation */
 
+.donation {
+    background-color: $color-light-add;
+}
+
+.donation__wrapper {
+    margin-top: 100px;
+    display: flex;
+    >img {
+        margin: 92px 30px 111px 182px;
+        background: transparent;
+    }
+}
+
+.donation__title {
+    margin-top: 82px;
+    margin-bottom: 21px;
+}
+
 .donation__subtitle {
     @include font($family: Georgia, $size: 1.5rem, $weight: 400);
+    letter-spacing: 0.06em;
+}
+
+.donation__btn {
+    margin-top: 20px;
+    height: 43px;
+    width: 349px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    background-color: $color-primary;
+    @include font($family: Georgia, $size: 2.0rem, $weight: 400);
+    letter-spacing: 0.06em;
+    >img {
+        margin-left: 15px;
+    }
+    >a {
+        margin-left: 15px;
+    }
+}
+
+.description {
+    margin-top: 21px;
+    width: 380px;
+    @include font($family: Arial, $size: 1.2rem, $weight: normal);
+    line-height: 18px;
+    color: #B2B2B2;
 }
