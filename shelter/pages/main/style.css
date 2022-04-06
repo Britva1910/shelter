@@ -232,6 +232,7 @@ html {
 
 /* pets */
 .pets {
+  height: 877px;
   background-color: #F6F6F6;
 }
 
@@ -280,8 +281,8 @@ html {
   /* FIXME add animation */
 }
 
-.pets__card:nth-child(1) {
-  margin: 0 10px;
+.pets__card:nth-child(3) {
+  margin: 0 40px;
 }
 
 .pets__card {
@@ -297,10 +298,25 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 9px;
   background-color: #FAFAFA;
+}
+
+.pets__card > img {
+  margin-bottom: 30px;
+}
+
+.card__name {
+  margin-bottom: 33px;
+  font-family: Georgia;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+  letter-spacing: 0.06em;
 }
 
 .card__btn {
@@ -310,7 +326,7 @@ html {
 
 .pets__button {
   display: block;
-  margin: auto;
+  margin: 0 auto 100px auto;
   width: 261px;
   text-align: center;
 }
