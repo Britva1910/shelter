@@ -13,8 +13,8 @@
 }
 
 .layout-2-columns > * {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 39%;
+      flex-basis: 39%;
 }
 
 h3 {
@@ -38,6 +38,7 @@ h3 {
   font-weight: normal;
   line-height: 1.7rem;
   line-height: 130%;
+  letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer;
 }
@@ -90,7 +91,13 @@ html {
           align-items: center;
 }
 
+.logo {
+  height: 60px;
+  margin-bottom: 39px;
+}
+
 .logo__main {
+  margin-bottom: 10px;
   font-family: Georgia;
   font-size: 3.2rem;
   font-style: normal;
@@ -102,6 +109,7 @@ html {
 }
 
 .logo__subtitle {
+  margin-left: 5px;
   font-family: Arial;
   font-size: 1.3rem;
   font-style: normal;
@@ -134,7 +142,7 @@ html {
 }
 
 .not-only__main {
-  margin-top: 163px;
+  margin-top: 128px;
 }
 
 .not-only__title {
@@ -289,5 +297,61 @@ html {
   margin: auto;
   width: 261px;
   text-align: center;
+}
+
+/* help section */
+.help__title {
+  text-align: center;
+}
+
+.help__container {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.help__card {
+  height: 113px;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.help__card-name {
+  margin-top: 10px;
+  font-family: Georgia;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+/* Donation */
+.donation__subtitle {
+  font-family: Georgia;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

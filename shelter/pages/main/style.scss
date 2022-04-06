@@ -28,7 +28,7 @@ $color-black: #292929;
 /* base */
 
 .layout-2-columns {
-    @include columns($width: 40%)
+    @include columns($width: 39%)
 }
 
 h3 {
@@ -44,6 +44,7 @@ h3 {
     border-radius: 100px;
     @include font($family: Georgia, $size: 1.7rem, $weight: normal);
     line-height: 130%;
+    letter-spacing: 0.06em;
     color: $color-black;
     cursor: pointer;
 }
@@ -92,7 +93,13 @@ html {
     align-items: center;
 }
 
+.logo {
+    height: 60px;
+    margin-bottom: 39px;
+}
+
 .logo__main {
+    margin-bottom: 10px;
     @include font($family: Georgia, $size: 3.2rem, $weight: normal);
     line-height: 110%;
     letter-spacing: 0.06em;
@@ -100,6 +107,7 @@ html {
 }
 
 .logo__subtitle {
+    margin-left: 5px;
     @include font($family: Arial, $size: 1.3rem, $weight: normal);
     line-height: 1.5rem;
     letter-spacing: 0.1em;
@@ -120,7 +128,7 @@ html {
 }
 
 .not-only__main {
-    margin-top: 163px;
+    margin-top: 128px;
 }
 
 .not-only__title {
@@ -232,4 +240,41 @@ html {
     margin: auto;
     width: 261px;
     text-align: center;
+}
+
+
+/* help section */
+
+.help__title {
+    text-align: center;
+}
+
+.help__container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.help__card {
+    height: 113px;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.help__card-name {
+    margin-top: 10px;
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+}
+
+
+/* Donation */
+
+.donation__subtitle {
+    @include font($family: Georgia, $size: 1.5rem, $weight: 400);
 }
