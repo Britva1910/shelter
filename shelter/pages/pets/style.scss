@@ -214,7 +214,6 @@
             @include font($family: Georgia, $size: 2.0rem, $weight: normal);
             line-height: 115%;
             color: #CDCDCD;
-            cursor: pointer;
             &:nth-child(1) {
                 border: 2px solid #CDCDCD;
             }
@@ -234,6 +233,7 @@
         }
         
         .btn__hover {
+            cursor: pointer;
             &:hover {
                 background-color: $color-hovered;
                 transform: scale(1.1);

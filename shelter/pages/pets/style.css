@@ -273,7 +273,6 @@ html {
   line-height: 2rem;
   line-height: 115%;
   color: #CDCDCD;
-  cursor: pointer;
 }
 
 .pets__btn:nth-child(1) {
@@ -295,6 +294,10 @@ html {
 
 .pets__btn:nth-child(5) {
   color: #545454;
+}
+
+.btn__hover {
+  cursor: pointer;
 }
 
 .btn__hover:hover {
