@@ -91,7 +91,6 @@
             width: 1280px;
             margin: auto;
             height: 120px;
-            padding-top: 20px;
             background-color: $color-light;
         }
         
@@ -106,6 +105,7 @@
         .logo {
             height: 60px;
             margin-bottom: 39px;
+            text-decoration: none;
             cursor: pointer;
         }
         
@@ -179,7 +179,7 @@
         /* pets */
         
         .pets {
-            height: 1342px;
+            height: 1332px;
             background-color: $color-bg;
         }
         
