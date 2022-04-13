@@ -1,0 +1,27 @@
+.not-only__main {
+    margin-top: 128px;
+}
+
+.not-only__title {
+    width: 310px;
+    @include font($family: Georgia, $size: 4.4rem, $weight: normal);
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.not-only__subtitle {
+    margin: 42px 0;
+    @include font($family: Arial, $size: 1.5rem, $weight: normal);
+    line-height: 160%;
+    color: #CDCDCD;
+}
+
+.not-only-btn {
+    width: 207px;
+}
+
+.not-only__img {
+    background: transparent;
+}

@@ -1,0 +1,56 @@
+.donation {
+    background-color: $color-light-add;
+}
+
+.donation__wrapper {
+    margin-top: 100px;
+    display: flex;
+    >img {
+        margin: 92px 30px 111px 182px;
+        background: transparent;
+    }
+}
+
+.donation__title {
+    margin-top: 82px;
+    margin-bottom: 21px;
+}
+
+.donation__subtitle {
+    @include font($family: Georgia, $size: 1.5rem, $weight: 400);
+    letter-spacing: 0.06em;
+}
+
+.donation__btn {
+    margin-top: 20px;
+    height: 43px;
+    width: 349px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    background-color: $color-primary;
+    @include font($family: Georgia, $size: 2.0rem, $weight: 400);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    >img {
+        margin-left: 15px;
+    }
+    >a {
+        text-decoration: none;
+        margin-left: 15px;
+        color: $color-black;
+    }
+    &:hover {
+        transform: scale(1.1);
+        border-bottom: 3px $color-primary solid;
+        transition: all .4s ease;
+    }
+}
+
+.description {
+    margin-top: 21px;
+    width: 380px;
+    @include font($family: Arial, $size: 1.2rem, $weight: normal);
+    line-height: 18px;
+    color: #B2B2B2;
+}

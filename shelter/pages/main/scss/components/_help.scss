@@ -1,0 +1,39 @@
+.help__title {
+    width: 311px;
+    margin: 80px auto 46px auto;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.help__container {
+    margin: 0 auto 100px auto;
+    width: 1026px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 80px;
+    row-gap: 44px;
+    > :nth-child(6) {
+        margin-left: 83px;
+    }
+    > :nth-child(9) {
+        margin-right: 83px;
+    }
+}
+
+.help__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    >img {
+        margin-top: 13px;
+    }
+}
+
+.help__card-name {
+    margin-top: 31px;
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    letter-spacing: 0.06em;
+}

@@ -1,0 +1,85 @@
+.pets {
+    height: 877px;
+    background-color: #F6F6F6;
+}
+
+.pets__title {
+    margin: auto;
+    padding-top: 80px;
+    width: 400px;
+    @include font($family: Georgia, $size: 3.5rem, $weight: normal);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.pets__container {
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pets__btn {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px $color-primary solid;
+    border-radius: 100%;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-hovered;
+        transform: scale(1.1);
+        transition: all .6s ease;
+        border: 2px $color-hovered solid;
+    }
+}
+
+.pets__card:nth-child(3) {
+    margin: 0 40px;
+}
+
+.pets__card {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9px;
+    background-color: $color-light-add;
+    cursor: pointer;
+    >img {
+        margin-bottom: 30px;
+        border-radius: 9px 9px 0 0;
+    }
+    &:hover {
+        background-color: $color-light;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        .card__btn {
+            background-color: $color-hovered;
+            transition: all .3s ease;
+            border: 2px $color-hovered solid;
+        }
+    }
+}
+
+.card__name {
+    margin-bottom: 33px;
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    letter-spacing: 0.06em;
+}
+
+.card__btn {
+    width: 187px;
+    text-align: center;
+}
+
+.pets__button {
+    display: block;
+    margin: 0 auto 100px auto;
+    width: 261px;
+    text-align: center;
+}
