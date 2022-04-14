@@ -1,14 +1,22 @@
 .not-only__main {
     margin-top: 128px;
+    @include media-tablet {
+        position: relative;
+        margin: 0 auto;
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .not-only__title {
     width: 310px;
     @include font($family: Georgia, $size: 4.4rem, $weight: normal);
     line-height: 130%;
-    display: flex;
-    align-items: center;
     color: #FFFFFF;
+    @include media-tablet {
+        margin: 0;
+    }
 }
 
 .not-only__subtitle {
@@ -20,8 +28,21 @@
 
 .not-only-btn {
     width: 207px;
+    @include media-tablet {
+        margin: auto;
+    }
 }
 
 .not-only__img {
+    max-width: 569px;
+    width: 100%;
+    height: auto;
     background: transparent;
+    @include media-tablet {
+        position: absolute;
+        max-width: 569px;
+        margin-top: 100px;
+        right: 4.172%;
+        top: 472px;
+    }
 }
