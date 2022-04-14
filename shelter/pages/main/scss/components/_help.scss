@@ -15,9 +15,19 @@
     row-gap: 44px;
     > :nth-child(6) {
         margin-left: 83px;
+        @include media-tablet {
+            margin-left: 0;
+        }
     }
     > :nth-child(9) {
         margin-right: 83px;
+        @include media-tablet {
+            margin-right: 0;
+        }
+    }
+    @include media-tablet {
+        max-width: 630px;
+        column-gap: 60px;
     }
 }
 
@@ -29,6 +39,9 @@
     flex-direction: column;
     >img {
         margin-top: 13px;
+    }
+    @include media-tablet {
+        width: 170px;
     }
 }
 

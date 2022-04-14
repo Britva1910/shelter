@@ -8,6 +8,19 @@
     >img {
         margin: 92px 30px 111px 182px;
         background: transparent;
+        @include media-tablet {
+            margin: 62px 132px 100px 132px;
+        }
+    }
+    @include media-tablet {
+        flex-direction: column-reverse;
+    }
+}
+
+.donation__inner {
+    @include media-tablet {
+        max-width: 380px;
+        margin: auto;
     }
 }
 

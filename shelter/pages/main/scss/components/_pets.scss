@@ -18,6 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-tablet {
+        max-width: 708px;
+        margin: auto;
+        padding-top: 60px;
+    }
 }
 
 .pets__btn {
@@ -39,6 +44,16 @@
 
 .pets__card:nth-child(3) {
     margin: 0 40px;
+    @include media-tablet {
+        margin-left: 27px;
+        margin-right: 0;
+    }
+}
+
+.pets__card:nth-child(4) {
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .pets__card {
@@ -82,4 +97,7 @@
     margin: 0 auto 100px auto;
     width: 261px;
     text-align: center;
+    @include media-tablet {
+        margin: 60px auto 100px auto;
+    }
 }

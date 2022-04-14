@@ -29,8 +29,10 @@ h3 {
 
 .container {
     max-width: 1200px;
-    margin: 80px auto 100px auto;
-    @include media-tablet {}
+    margin: auto;
+    @include media-tablet {
+        margin: 0;
+    }
 }
 
 .section-wrapper {
