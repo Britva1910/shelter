@@ -1,6 +1,9 @@
 .pets {
     height: 877px;
     background-color: #F6F6F6;
+    @include media-mobile {
+        height: 791px;
+    }
 }
 
 .pets__title {
@@ -11,6 +14,12 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     text-align: center;
+    @include media-mobile {
+        max-width: 300px;
+        padding-top: 42px;
+        @include font($family: Georgia, $size: 2.5rem, $weight: normal);
+        line-height: 130%;
+    }
 }
 
 .pets__container {
@@ -22,6 +31,12 @@
         max-width: 708px;
         margin: auto;
         padding-top: 60px;
+    }
+    @include media-mobile {
+        padding-top: 41px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
     }
 }
 
@@ -42,11 +57,27 @@
     }
 }
 
+.pets__btn:nth-child(1) {
+    @include media-mobile {
+        order: 2;
+        margin-right: 80px;
+    }
+}
+
+.pets__btn:nth-child(5) {
+    @include media-mobile {
+        order: 3;
+    }
+}
+
 .pets__card:nth-child(3) {
     margin: 0 40px;
     @include media-tablet {
         margin-left: 27px;
         margin-right: 0;
+    }
+    @include media-mobile {
+        display: none;
     }
 }
 
@@ -99,5 +130,8 @@
     text-align: center;
     @include media-tablet {
         margin: 60px auto 100px auto;
+    }
+    @include media-mobile {
+        margin-top: 43px;
     }
 }

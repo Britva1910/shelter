@@ -3,6 +3,11 @@
     margin: 80px auto 46px auto;
     text-align: center;
     letter-spacing: 0.06em;
+    @include media-mobile {
+        margin: 42px auto 22px auto;
+        @include font($family: Georgia, $size: 2.5rem, $weight: normal);
+        line-height: 130%;
+    }
 }
 
 .help__container {
@@ -29,6 +34,12 @@
         max-width: 630px;
         column-gap: 60px;
     }
+    @include media-mobile {
+        margin-bottom: 42px;
+        max-width: 290px;
+        column-gap: 30px;
+        row-gap: 11px;
+    }
 }
 
 .help__card {
@@ -39,9 +50,16 @@
     flex-direction: column;
     >img {
         margin-top: 13px;
+        @include media-mobile {
+            width: 40%;
+            margin-top: 15px;
+        }
     }
     @include media-tablet {
         width: 170px;
+    }
+    @include media-mobile {
+        width: 130px;
     }
 }
 
@@ -49,4 +67,8 @@
     margin-top: 31px;
     @include font($family: Georgia, $size: 2.0rem, $weight: normal);
     letter-spacing: 0.06em;
+    @include media-mobile {
+        margin-top: 24px;
+        @include font($family: Georgia, $size: 1.5rem, $weight: normal);
+    }
 }

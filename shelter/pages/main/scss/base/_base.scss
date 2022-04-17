@@ -2,6 +2,13 @@ html {
     font-size: 10px;
 }
 
+body {
+    margin: 0;
+    @include media-mobile {
+        margin: 0;
+    }
+}
+
 .layout-2-columns {
     @include columns($width: 39%);
     @include media-tablet {
@@ -20,11 +27,17 @@ h3 {
     @include media-tablet {
         height: 1165px;
     }
+    @include media-mobile {
+        height: 823px;
+    }
 }
 
 .wrapper {
     max-width: 1280px;
     margin: auto;
+    @include media-mobile {
+        max-width: 767px;
+    }
 }
 
 .container {
