@@ -1,0 +1,137 @@
+.pets {
+    height: 877px;
+    background-color: #F6F6F6;
+    @include media-mobile {
+        height: 791px;
+    }
+}
+
+.pets__title {
+    margin: auto;
+    padding-top: 80px;
+    width: 400px;
+    @include font($family: Georgia, $size: 3.5rem, $weight: normal);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    @include media-mobile {
+        max-width: 300px;
+        padding-top: 42px;
+        @include font($family: Georgia, $size: 2.5rem, $weight: normal);
+        line-height: 130%;
+    }
+}
+
+.pets__container {
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-tablet {
+        max-width: 708px;
+        margin: auto;
+        padding-top: 60px;
+    }
+    @include media-mobile {
+        padding-top: 41px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+}
+
+.pets__btn {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px $color-primary solid;
+    border-radius: 100%;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-hovered;
+        transform: scale(1.1);
+        transition: all .6s ease;
+        border: 2px $color-hovered solid;
+    }
+}
+
+.pets__btn:nth-child(1) {
+    @include media-mobile {
+        order: 2;
+        margin-right: 80px;
+    }
+}
+
+.pets__btn:nth-child(5) {
+    @include media-mobile {
+        order: 3;
+    }
+}
+
+.pets__card:nth-child(3) {
+    margin: 0 40px;
+    @include media-tablet {
+        margin-left: 27px;
+        margin-right: 0;
+    }
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.pets__card:nth-child(4) {
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.pets__card {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9px;
+    background-color: $color-light-add;
+    cursor: pointer;
+    >img {
+        margin-bottom: 30px;
+        border-radius: 9px 9px 0 0;
+    }
+    &:hover {
+        background-color: $color-light;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        .card__btn {
+            background-color: $color-hovered;
+            transition: all .3s ease;
+            border: 2px $color-hovered solid;
+        }
+    }
+}
+
+.card__name {
+    margin-bottom: 33px;
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    letter-spacing: 0.06em;
+}
+
+.card__btn {
+    width: 187px;
+    text-align: center;
+}
+
+.pets__button {
+    display: block;
+    margin: 0 auto 100px auto;
+    width: 261px;
+    text-align: center;
+    @include media-tablet {
+        margin: 60px auto 100px auto;
+    }
+    @include media-mobile {
+        margin-top: 43px;
+    }
+}
