@@ -1,0 +1,11 @@
+.layout-3-columns {
+    >img {
+        margin-top: 41px;
+        @include media-tablet {
+            margin-top: 75px;
+        }
+        @include media-mobile {
+            margin-top: 37px;
+        }
+    }
+}
