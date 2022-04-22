@@ -1,0 +1,102 @@
+.donation {
+    background-color: $color-light-add;
+}
+
+.donation__wrapper {
+    margin-top: 100px;
+    display: flex;
+    >img {
+        margin: 92px 30px 111px 182px;
+        background: transparent;
+        @include media-tablet {
+            margin: 62px 132px 100px 132px;
+        }
+        @include media-mobile {
+            margin: 42px 10px 42px 10px;
+        }
+    }
+    @include media-tablet {
+        flex-direction: column-reverse;
+    }
+    @include media-mobile {
+        max-width: 280px;
+        margin: auto;
+    }
+}
+
+.donation__inner {
+    @include media-tablet {
+        max-width: 380px;
+        margin: auto;
+    }
+    @include media-mobile {
+        max-width: 280px;
+    }
+}
+
+.donation__title {
+    margin-top: 82px;
+    margin-bottom: 21px;
+    @include media-mobile {
+        margin-bottom: 23px;
+        margin-top: 42px;
+        @include font($family: Georgia, $size: 2.5rem, $weight: 400);
+        line-height: 130%;
+        text-align: center;
+    }
+}
+
+.donation__subtitle {
+    @include font($family: Georgia, $size: 1.5rem, $weight: 400);
+    letter-spacing: 0.06em;
+    @include media-mobile {
+        text-align: center;
+        letter-spacing: 0;
+    }
+}
+
+.donation__btn {
+    margin-top: 20px;
+    height: 43px;
+    width: 349px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    background-color: $color-primary;
+    @include font($family: Georgia, $size: 2.0rem, $weight: 400);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    >img {
+        margin-left: 15px;
+    }
+    >a {
+        text-decoration: none;
+        margin-left: 15px;
+        color: $color-black;
+        @include media-mobile {
+            @include font($family: Georgia, $size: 1.5rem, $weight: 400);
+        }
+    }
+    &:hover {
+        transform: scale(1.1);
+        border-bottom: 3px $color-primary solid;
+        transition: all .4s ease;
+    }
+    @include media-mobile {
+        max-width: 280px;
+        margin-top: 25px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.description {
+    margin-top: 21px;
+    width: 380px;
+    @include font($family: Arial, $size: 1.2rem, $weight: normal);
+    line-height: 18px;
+    color: #B2B2B2;
+    @include media-mobile {
+        max-width: 280px;
+        text-align: justify;
+    }
+}
