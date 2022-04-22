@@ -31,6 +31,9 @@
     margin-bottom: 39px;
     text-decoration: none;
     cursor: pointer;
+    @include media-tablet {
+        height: 72px;
+    }
 }
 
 .logo__main {
