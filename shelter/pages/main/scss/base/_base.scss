@@ -1,0 +1,57 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    @include media-mobile {
+        margin: 0;
+    }
+}
+
+.layout-2-columns {
+    @include columns($width: 39%);
+    @include media-tablet {
+        flex-direction: column;
+    }
+}
+
+h3 {
+    @include font($family: Georgia, $size: 3.5rem, $weight: normal);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.main {
+    background: url(../../assets/images/main/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211f20;
+    @include media-tablet {
+        height: 1165px;
+    }
+    @include media-mobile {
+        height: 823px;
+    }
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+    @include media-mobile {
+        max-width: 767px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    @include media-tablet {
+        margin: 0;
+    }
+}
+
+.section-wrapper {
+    margin-top: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
