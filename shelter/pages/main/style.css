@@ -1119,6 +1119,7 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    justify-items: center;
     row-gap: 20px;
   }
 }
@@ -1163,7 +1164,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  .pets__btn:nth-child(5) {
+  .pets__btn:nth-child(3) {
     margin-right: 21px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -1175,26 +1176,49 @@ h3 {
   }
 }
 
-.pets__card:nth-child(3) {
-  margin: 0 40px;
+.pets__card:nth-child(2) {
+  margin: 0 88px;
 }
 
 @media (max-width: 1279px) {
-  .pets__card:nth-child(3) {
+  .pets__card:nth-child(2) {
     margin-left: 27px;
     margin-right: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .pets__card:nth-child(3) {
+  .pets__card:nth-child(2) {
     display: none;
   }
 }
 
 @media (max-width: 1279px) {
-  .pets__card:nth-child(4) {
+  .pets__card:nth-child(3) {
     display: none;
+  }
+}
+
+.pets__cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 990px;
+  overflow: hidden;
+}
+
+@media (max-width: 1279px) {
+  .pets__cards-container {
+    max-width: 630px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pets__cards-container {
+    max-width: 270px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
@@ -1204,6 +1228,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1216,12 +1241,16 @@ h3 {
           justify-content: flex-start;
   border-radius: 9px;
   background-color: #FAFAFA;
+  -webkit-transition: all .9s linear;
+  transition: all .9s linear;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .pets__card > img {
   margin-bottom: 30px;
   border-radius: 9px 9px 0 0;
+  max-height: 270px;
 }
 
 .pets__card:hover {
@@ -1248,6 +1277,52 @@ h3 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
+}
+
+@-webkit-keyframes go-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes go-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes go-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes go-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.anim-left {
+  -webkit-animation: go-left 1.2s;
+          animation: go-left 1.2s;
+}
+
+.anim-right {
+  -webkit-animation: go-right 1.2s;
+          animation: go-right 1.2s;
 }
 
 .card__name {
