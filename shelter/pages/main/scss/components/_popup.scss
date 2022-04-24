@@ -1,0 +1,71 @@
+.popup-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+}
+
+.popup-container {
+    width: 900px;
+    height: 500px;
+    position: relative;
+    left: calc(50% - 450px);
+    top: calc(50% - 250px);
+    display: flex;
+    background: #FAFAFA;
+    border-radius: 9px;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    >img {
+        height: 100%;
+        margin-right: 30px;
+        border-radius: 9px;
+    }
+}
+
+.popup__btn-close {
+    position: absolute;
+    right: -44px;
+    top: -55px;
+}
+
+.popup__description {
+    >ul {
+        padding-left: 15px;
+        list-style: none;
+    }
+    >ul li::before {
+        content: "\2022";
+        color: $color-primary;
+        font-weight: bold;
+        display: inline-block;
+        width: 1.5em;
+        margin-left: -1em;
+    }
+    >ul li span:nth-child(1) {
+        @include font($family: Georgia, $size: 1.5rem, $weight: bold);
+    }
+    >ul li span:nth-child(2) {
+        @include font($family: Georgia, $size: 1.5rem, $weight: normal);
+    }
+}
+
+.popup__description-name {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    @include font($family: Georgia, $size: 3.5rem, $weight: normal);
+}
+
+.popup__description-breed {
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+}
+
+.popup__description-text {
+    max-width: 350px;
+    margin: 40px 0;
+    @include font($family: Georgia, $size: 1.5rem, $weight: normal);
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
