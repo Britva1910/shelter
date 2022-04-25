@@ -10,10 +10,14 @@ body.addEventListener('click', (e) => {
     }
 })
 
-const allBtnPets = document.querySelectorAll('.card__btn');
-allBtnPets.forEach(elem => elem.addEventListener('click', (event) => getPopUp(event)));
+const allPetsCards = document.querySelectorAll('.pets__card');
+allPetsCards.forEach(elem => elem.addEventListener('click', (event) => {
+    getPopUp(event);
+    document.getElementById('body').classList.toggle('no-scroll');
+}));
 document.addEventListener('click', (event) => {
     if (event.target.classList.value === 'popup-wrapper') {
         document.querySelector('.popup-wrapper').remove();
+        document.getElementById('body').classList.remove('no-scroll');
     }
 })
