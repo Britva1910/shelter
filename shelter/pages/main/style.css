@@ -5,6 +5,7 @@
 } */
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -837,6 +838,7 @@ h3 {
   -webkit-column-gap: 80px;
           column-gap: 80px;
   row-gap: 44px;
+  scroll-behavior: smooth;
 }
 
 .help__container > :nth-child(6) {
@@ -1456,7 +1458,8 @@ h3 {
 }
 
 .popup-container > img {
-  height: 100%;
+  height: auto;
+  max-width: 50%;
   margin-right: 30px;
   border-radius: 9px;
 }
@@ -1498,6 +1501,13 @@ h3 {
   position: absolute;
   right: -44px;
   top: -55px;
+}
+
+@media (max-width: 767px) {
+  .popup__description {
+    max-width: 220px;
+    overflow-y: scroll;
+  }
 }
 
 .popup__description > ul {

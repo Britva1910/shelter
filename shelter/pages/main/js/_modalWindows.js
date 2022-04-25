@@ -1,7 +1,6 @@
 import { pets } from '../../data/pets.js';
 
 export const getPopUp = (event) => {
-    console.log(event.target.closest('.pets__card').dataset.index);
     const index = event.target.closest('.pets__card').dataset.index;
     const popUp = document.createElement('div');
     popUp.classList.add('popup-wrapper');
@@ -24,9 +23,12 @@ export const getPopUp = (event) => {
     </div>
     </div>
     `;
+    document.getElementById('body').classList.add('no-scroll');
+
     document.getElementById('body').append(popUp);
     const btnClose = popUp.querySelector('.popup__btn-close');
     btnClose.addEventListener('click', () => {
         popUp.remove();
+        document.getElementById('body').classList.remove('no-scroll');
     })
 }
