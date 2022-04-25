@@ -1,8 +1,5 @@
 import { activeBurgerMenu, burgerMenu, body } from './js/burger.js';
-import { getPopUp } from './js/modalWindows.js'
-
-
-console.log(document.getElementById('burger-menu'));
+import { getPopUp } from '../main/js/modalWindows.js'
 
 burgerMenu.addEventListener('click', activeBurgerMenu);
 body.addEventListener('click', (e) => {
@@ -12,11 +9,6 @@ body.addEventListener('click', (e) => {
         activeBurgerMenu();
     }
 })
-
-body.addEventListener('click', (e) => {
-    console.log(e.target.classList.value);
-
-});
 
 const allBtnPets = document.querySelectorAll('.card__btn');
 allBtnPets.forEach(elem => elem.addEventListener('click', (event) => getPopUp(event)));
