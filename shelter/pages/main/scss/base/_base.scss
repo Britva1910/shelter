@@ -1,5 +1,6 @@
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,4 +51,8 @@ h3 {
 
 .section-wrapper {
     margin-top: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

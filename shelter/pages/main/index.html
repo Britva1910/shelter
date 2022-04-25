@@ -6,19 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
+
+    <div id="menu-burger">
+        <div class="menu-burger" id="menu">
+            <div class="burger__menu-top header">
+                <a class="logo burger__menu-logo">
+                    <h1 class="logo__main">Cozy House</h1>
+                    <p class="logo__subtitle">Shelter for pets in Boston</p>
+                </a>
+            </div>
+            <ul class="menu-burger-inner">
+                <li class="nav__about">
+                    <a class="nav__link" href="#">About the shelter</a>
+                </li>
+                <li class="nav__pets">
+                    <a class="nav__link" href="../pets/index.html">Our pets</a>
+                </li>
+                <li class="nav__linknav__help">
+                    <a class="nav__link" href="#help">Help the shelter</a>
+                </li>
+                <li class="nav__contacts">
+                    <a class="nav__link" href="#footer">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="wrapper">
         <main class="main">
             <div class="container section-wrapper">
                 <header class="header">
-                    <a class="logo">
+                    <a class="logo" id="logo">
                         <h1 class="logo__main">Cozy House</h1>
                         <p class="logo__subtitle">Shelter for pets in Boston</p>
                     </a>
-                    <span class="header__humburger humbuger"> <span class="humburger__line"></span></span>
+                    <span class="header__humburger humbuger" id="burger-menu"> <span class="humburger__line"></span></span>
                     <nav class="navigation">
                         <ul class="navigation-inner">
                             <li class="nav__about">
@@ -35,6 +61,7 @@
                             </li>
                         </ul>
                     </nav>
+
                 </header>
                 <section class="not-only">
                     <div class="layout-2-columns">
@@ -52,7 +79,7 @@
         </main>
         <section class="about container">
             <div class="layout-2-columns about-inner">
-                <img src="../../assets/images/main/about-pets.jpg" class="about__img">
+                <div class="about__img"></div>
                 <article class="about-text">
                     <h3 class="about__title">About the shelter “Cozy House”</h3>
                     <p class="about__content">
@@ -71,25 +98,28 @@
                     Our friends who <br> are looking for a house
                 </div>
                 <div class="pets__container">
-                    <div class="pets__btn">
+                    <div class="pets__btn" id="pets-btn-left">
                         <img src="../../assets/icons/Arrow.svg" alt="">
                     </div>
-                    <div class="pets__card">
-                        <img src="../../assets/images/main/pets-katrine.jpg" class="card__image"></img>
-                        <div class="card__name">Katrine</div>
-                        <button class=" button button-bordered card__btn">Learn more</button>
+                    <div class="pets__cards-container">
+                        <div class="pets__card" data-index="4">
+                            <img src="../../assets/images/main/pets-katrine.jpg" class="card__image"></img>
+                            <div class="card__name">Katrine</div>
+                            <button class=" button button-bordered card__btn">Learn more</button>
+                        </div>
+                        <div class="pets__card" data-index="0">
+                            <img src="../../assets/images/main/pets-jennifer.jpg" class="card__image"></img>
+                            <div class="card__name">Jennifer</div>
+                            <button class=" button button-bordered card__btn">Learn more</button>
+                        </div>
+                        <div class="pets__card" data-index="2">
+                            <img src="../../assets/images/main/pets-woody.jpg" class="card__image"></img>
+                            <div class="card__name">Woody</div>
+                            <button class=" button button-bordered card__btn">Learn more</button>
+                        </div>
                     </div>
-                    <div class="pets__card">
-                        <img src="../../assets/images/main/pets-jennifer.jpg" class="card__image"></img>
-                        <div class="card__name">Jennifer</div>
-                        <button class=" button button-bordered card__btn">Learn more</button>
-                    </div>
-                    <div class="pets__card">
-                        <img src="../../assets/images/main/pets-woody.jpg" class="card__image"></img>
-                        <div class="card__name">Woody</div>
-                        <button class=" button button-bordered card__btn">Learn more</button>
-                    </div>
-                    <div class="pets__btn">
+
+                    <div class="pets__btn" id="pets-btn-right">
                         <img src="../../assets/icons/Arrow (1).svg" alt="">
                     </div>
                 </div>
@@ -162,7 +192,7 @@
         <footer id="footer" class="footer">
             <div class="layout-3-columns">
                 <div class="footer-inner">
-                    <h3 class="footer-inner__title">For questions and suggestions</h3>
+                    <h3 class="footer-inner__title">For questions <br> and suggestions</h3>
                     <a href="mailto:email@shelter.com" class="footer-inner__link">
                         <img src="../../assets/icons/icon-email.svg" alt="">
                         <div class="footer-inner__link-content">email@shelter.com</div>
@@ -173,7 +203,7 @@
                     </a>
                 </div>
                 <div class="footer-inner footer-inner-add">
-                    <h3 class="footer-inner__title">We are waiting for your visit</h3>
+                    <h3 class="footer-inner__title">We are waiting <br> for your visit</h3>
                     <a href="https://www.google.ru/maps/dir//1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.3585558,-71.056915,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!2m2!1d-71.0547263!2d42.3585519" class="footer-inner__link">
                         <img src="../../assets/icons/icon-marker.png" alt="">
                         <div class="footer-inner__link-content">1 Central Street, Boston <br>(entrance from the store)</div>
@@ -189,6 +219,8 @@
         </footer>
 
     </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="js/slider.js"></script>
 </body>
 
 </html>

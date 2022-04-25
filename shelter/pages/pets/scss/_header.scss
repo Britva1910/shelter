@@ -1,3 +1,7 @@
+%humburger-line {
+    background-color: #000000;
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -86,4 +90,8 @@
 
 .nav__pets {
     border-bottom: 3px $color-primary solid;
+}
+
+.hidden {
+    opacity: 0;
 }

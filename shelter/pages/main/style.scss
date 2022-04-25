@@ -1,8 +1,3 @@
-/* * {
-    border: 1px red solid
-}
- */
-
 @import "scss/abstract/constants";
 @import "scss/abstract/mixins";
 @import "scss/base/base";
@@ -16,3 +11,5 @@
 @import "scss/components/help";
 @import "scss/components/not-only";
 @import "scss/components/pets";
+@import "scss/components/burger-menu";
+@import "scss/components/popup";
