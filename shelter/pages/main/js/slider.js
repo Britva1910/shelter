@@ -1,5 +1,5 @@
 import { pets } from '../../data/pets.js';
-import { getPopUp } from './_modalWindows.js';
+import { getPopUp } from './modalWindows.js';
 
 const sliderContainer = document.querySelector('.pets__cards-container');
 const btnLeft = document.getElementById('pets-btn-left');

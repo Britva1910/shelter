@@ -906,6 +906,7 @@ h3 {
   left: 0;
   top: 0;
   background-color: rgba(41, 41, 41, 0.6);
+  cursor: pointer;
 }
 
 .popup-container {
@@ -921,6 +922,7 @@ h3 {
   border-radius: 9px;
   -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
           box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  cursor: auto;
 }
 
 .popup-container > img {
