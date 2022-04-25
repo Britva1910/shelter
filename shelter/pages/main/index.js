@@ -1,6 +1,8 @@
 import { activeBurgerMenu, burgerMenu, body } from './js/burger.js'
-import { getPopUp } from '../main/js/_modalWindows.js'
+import { getPopUp } from '../main/js/modalWindows.js';
+import { showSelfAssessment } from '../data/self-assessment.js';
 
+showSelfAssessment();
 
 burgerMenu.addEventListener('click', activeBurgerMenu);
 

@@ -1,5 +1,5 @@
 import { activeBurgerMenu, burgerMenu, body } from './js/burger.js';
-import { getPopUp } from './js/_modalWindows.js'
+import { getPopUp } from './js/modalWindows.js'
 
 
 console.log(document.getElementById('burger-menu'));
