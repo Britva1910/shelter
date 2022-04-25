@@ -22,6 +22,24 @@
         height: 100%;
         margin-right: 30px;
         border-radius: 9px;
+        @include media-mobile {
+            display: none;
+        }
+    }
+    @include media-tablet {
+        width: 630px;
+        height: 350px;
+        left: calc(50% - 315px);
+        top: calc(50% - 175px);
+    }
+    @include media-mobile {
+        width: 240px;
+        height: 341px;
+        left: calc(50% - 120px);
+        top: calc(50% - 170px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -35,6 +53,12 @@
     >ul {
         padding-left: 15px;
         list-style: none;
+        >li {
+            margin: 5px 0;
+            @include media-tablet {
+                margin: 3px 0;
+            }
+        }
     }
     >ul li::before {
         content: "\2022";
@@ -56,10 +80,19 @@
     margin-top: 50px;
     margin-bottom: 10px;
     @include font($family: Georgia, $size: 3.5rem, $weight: normal);
+    @include media-tablet {
+        margin-top: 10px;
+    }
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .popup__description-breed {
     @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .popup__description-text {
@@ -68,4 +101,15 @@
     @include font($family: Georgia, $size: 1.5rem, $weight: normal);
     line-height: 110%;
     letter-spacing: 0.06em;
+    @include media-tablet {
+        max-width: 260px;
+        margin: 20px 0;
+        @include font($family: Georgia, $size: 1.3rem, $weight: normal);
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+    @include media-mobile {
+        max-width: 220px;
+        text-align: justify;
+    }
 }

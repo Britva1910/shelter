@@ -1461,6 +1461,39 @@ h3 {
   border-radius: 9px;
 }
 
+@media (max-width: 767px) {
+  .popup-container > img {
+    display: none;
+  }
+}
+
+@media (max-width: 1279px) {
+  .popup-container {
+    width: 630px;
+    height: 350px;
+    left: calc(50% - 315px);
+    top: calc(50% - 175px);
+  }
+}
+
+@media (max-width: 767px) {
+  .popup-container {
+    width: 240px;
+    height: 341px;
+    left: calc(50% - 120px);
+    top: calc(50% - 170px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .popup__btn-close {
   position: absolute;
   right: -44px;
@@ -1470,6 +1503,16 @@ h3 {
 .popup__description > ul {
   padding-left: 15px;
   list-style: none;
+}
+
+.popup__description > ul > li {
+  margin: 5px 0;
+}
+
+@media (max-width: 1279px) {
+  .popup__description > ul > li {
+    margin: 3px 0;
+  }
 }
 
 .popup__description > ul li::before {
@@ -1507,12 +1550,30 @@ h3 {
   line-height: 3.5rem;
 }
 
+@media (max-width: 1279px) {
+  .popup__description-name {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__description-name {
+    text-align: center;
+  }
+}
+
 .popup__description-breed {
   font-family: Georgia;
   font-size: 2rem;
   font-style: normal;
   font-weight: normal;
   line-height: 2rem;
+}
+
+@media (max-width: 767px) {
+  .popup__description-breed {
+    text-align: center;
+  }
 }
 
 .popup__description-text {
@@ -1525,5 +1586,26 @@ h3 {
   line-height: 1.5rem;
   line-height: 110%;
   letter-spacing: 0.06em;
+}
+
+@media (max-width: 1279px) {
+  .popup__description-text {
+    max-width: 260px;
+    margin: 20px 0;
+    font-family: Georgia;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.3rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__description-text {
+    max-width: 220px;
+    text-align: justify;
+  }
 }
 /*# sourceMappingURL=style.css.map */

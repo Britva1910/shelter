@@ -19,4 +19,9 @@ body.addEventListener('click', (e) => {
 })
 
 const allBtnPets = document.querySelectorAll('.card__btn');
-allBtnPets.forEach(elem => elem.addEventListener('click', getPopUp));
+allBtnPets.forEach(elem => elem.addEventListener('click', (event) => getPopUp(event)));
+document.addEventListener('click', (event) => {
+    if (event.target.classList.value === 'popup-wrapper') {
+        document.querySelector('.popup-wrapper').remove();
+    }
+})

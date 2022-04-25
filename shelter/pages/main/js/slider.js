@@ -27,10 +27,11 @@ const getNewCards = () => {
             const randomNumber = getRandomNumbersNoRepeats();
             const card = document.createElement('div');
             card.classList.add('pets__card');
+            card.setAttribute('data-index', randomNumber);
             card.innerHTML = `  <img src="${pets[randomNumber].img}" class="card__image"></img>
                                 <div class="card__name">${pets[randomNumber].name}</div>
                                 <button class=" button button-bordered card__btn">Learn more</button>`;
-            card.querySelector('.card__btn').addEventListener('click', getPopUp);
+            card.querySelector('.card__btn').addEventListener('click', (event) => getPopUp(event));
             newCardsCollection.push(card);
             collection_2[i] = randomNumber;
             if (i === 2) {
