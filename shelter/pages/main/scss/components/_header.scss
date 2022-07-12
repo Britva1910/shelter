@@ -55,17 +55,21 @@
         list-style-type: none;
         padding-bottom: 5px;
         &:hover {
+            color: $color-light-add;
             transform: scale(1.1);
             border-bottom: 3px $color-primary solid;
             transition: all .4s ease;
         }
         >* {
             text-decoration: none;
-            color: $color-light;
+            color: $color-gray;
         }
     }
 }
 
 .nav__about {
     border-bottom: 3px $color-primary solid;
+    a {
+        color: $color-light-add;
+    }
 }

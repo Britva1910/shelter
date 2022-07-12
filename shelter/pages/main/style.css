@@ -781,6 +781,7 @@ h3 {
 }
 
 .navigation-inner > *:hover {
+  color: #FAFAFA;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border-bottom: 3px #F1CDB3 solid;
@@ -790,11 +791,15 @@ h3 {
 
 .navigation-inner > * > * {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #CDCDCD;
 }
 
 .nav__about {
   border-bottom: 3px #F1CDB3 solid;
+}
+
+.nav__about a {
+  color: #FAFAFA;
 }
 
 .help__title {
