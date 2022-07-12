@@ -44,6 +44,7 @@
 
 .about-text {
     margin-right: 78px;
+    color: $color-text-about;
     @include media-tablet {
         margin-right: 0;
     }

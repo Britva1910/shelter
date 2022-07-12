@@ -10,6 +10,7 @@
     margin: auto;
     padding-top: 80px;
     width: 400px;
+    color: $color-text-about;
     @include font($family: Georgia, $size: 3.5rem, $weight: normal);
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -129,6 +130,7 @@
 
 .card__name {
     margin-bottom: 33px;
+    color: $color-text-about;
     @include font($family: Georgia, $size: 2.0rem, $weight: normal);
     letter-spacing: 0.06em;
 }
