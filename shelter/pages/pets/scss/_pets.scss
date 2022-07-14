@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .friends__container {
     @include media-tablet {
         max-width: 580px;
@@ -177,4 +178,183 @@
     @include media-mobile {
         max-width: 300px;
     }
+=======
+.friends__container {
+    @include media-tablet {
+        max-width: 580px;
+        margin: auto;
+    }
+    @include media-mobile {
+        max-width: 320px;
+    }
+}
+
+.pets {
+    height: 1343px;
+    background-color: $color-bg;
+    @include media-tablet {
+        height: auto;
+        padding-bottom: 65px;
+    }
+    @include media-mobile {
+        padding-bottom: 32px;
+    }
+}
+
+.pets__title {
+    margin: auto;
+    padding-top: 80px;
+    width: 400px;
+    @include font($family: Georgia, $size: 3.5rem, $weight: normal);
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    @include media-mobile {
+        width: auto;
+        padding-top: 43px;
+        @include font($family: Georgia, $size: 2.5rem, $weight: normal);
+        line-height: 3.1rem;
+    }
+}
+
+.pets__container {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    @include media-tablet {
+        margin-top: 29px;
+        margin-bottom: 40px;
+    }
+    @include media-mobile {
+        margin-top: 43px;
+        margin-bottom: 43px;
+        justify-content: center;
+    }
+}
+
+.pets__btn {
+    height: 51px;
+    width: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px $color-primary solid;
+    border-radius: 100%;
+    background: transparent;
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    line-height: 115%;
+    color: #CDCDCD;
+    &:nth-child(1) {
+        border: 2px solid #CDCDCD;
+    }
+    &:nth-child(2) {
+        border: 2px solid #CDCDCD;
+    }
+    &:nth-child(3) {
+        background: #F1CDB3;
+        color: $color-black;
+    }
+    &:nth-child(4) {
+        color: $color-black;
+    }
+    &:nth-child(5) {
+        color: $color-black;
+    }
+}
+
+.btn__hover {
+    cursor: pointer;
+    &:hover {
+        background-color: $color-hovered;
+        border: 2px $color-hovered solid;
+        transform: scale(1.1);
+        transition: all .6s ease;
+    }
+}
+
+.pets__card {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9px;
+    background-color: $color-light-add;
+    cursor: pointer;
+    >img {
+        margin-bottom: 30px;
+        border-radius: 9px 9px 0 0;
+    }
+    &:hover {
+        background-color: $color-light;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        .card__btn {
+            background-color: $color-hovered;
+            transition: all .3s ease;
+            border: 2px $color-hovered solid;
+        }
+    }
+    &:nth-child(4) {
+        @include media-mobile {
+            display: none;
+        }
+    }
+    &:nth-child(5) {
+        @include media-mobile {
+            display: none;
+        }
+    }
+    &:nth-child(6) {
+        @include media-mobile {
+            display: none;
+        }
+    }
+    &:nth-child(7) {
+        @include media-tablet {
+            display: none;
+        }
+    }
+    &:nth-child(8) {
+        @include media-tablet {
+            display: none;
+        }
+    }
+}
+
+.card__name {
+    margin-bottom: 33px;
+    @include font($family: Georgia, $size: 2.0rem, $weight: normal);
+    letter-spacing: 0.06em;
+}
+
+.card__btn {
+    width: 187px;
+    text-align: center;
+}
+
+.pets__button {
+    display: block;
+    margin: 0 auto 100px auto;
+    width: 261px;
+    text-align: center;
+}
+
+.btn__wrapper {
+    margin: auto;
+    width: 340px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+        margin-bottom: 10px;
+    }
+    @include media-mobile {
+        max-width: 300px;
+    }
+>>>>>>> Stashed changes
 }

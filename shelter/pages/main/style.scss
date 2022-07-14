@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* * {
     border: 1px red solid
 }
@@ -15,4 +16,17 @@
 @import "scss/components/header";
 @import "scss/components/help";
 @import "scss/components/not-only";
+=======
+@import "scss/abstract/constants";
+@import "scss/abstract/mixins";
+@import "scss/base/base";
+@import "scss/base/buttons";
+@import "scss/base/humburger";
+@import "scss/components/about";
+@import "scss/components/donation";
+@import "scss/components/footer";
+@import "scss/components/header";
+@import "scss/components/help";
+@import "scss/components/not-only";
+>>>>>>> Stashed changes
 @import "scss/components/pets";

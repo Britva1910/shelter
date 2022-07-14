@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* * {
     border: 1px red solid
 }
@@ -7,6 +8,8 @@
         display: none;
     }
 } */
+=======
+>>>>>>> Stashed changes
 html {
   font-size: 10px;
 }
@@ -54,6 +57,10 @@ h3 {
   line-height: 3.5rem;
   line-height: 130%;
   letter-spacing: 0.06em;
+}
+
+form {
+  margin: auto;
 }
 
 .main {
@@ -494,7 +501,7 @@ h3 {
 }
 
 .layout-3-columns > img {
-  margin-top: 38px;
+  margin-top: 35px;
 }
 
 @media (max-width: 767px) {
@@ -516,6 +523,12 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+  .layout-3-columns .footer-inner-img {
+    margin-top: 75px;
   }
 }
 
