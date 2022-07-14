@@ -749,9 +749,6 @@ h3 {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   padding-bottom: 10px;
   padding-top: 10px;
   display: -webkit-box;
@@ -816,7 +813,7 @@ h3 {
   line-height: 3.2rem;
   line-height: 110%;
   letter-spacing: 0.06em;
-  color: #292929;
+  color: #545454;
 }
 
 @media (max-width: 1279px) {
@@ -854,10 +851,11 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 6px;
 }
 
 .navigation-inner > * {
-  margin-left: 35px;
+  margin-left: 36px;
   font-family: Arial;
   font-size: 1.5rem;
   font-style: normal;
@@ -877,11 +875,12 @@ h3 {
 
 .navigation-inner > * > * {
   text-decoration: none;
-  color: #292929;
+  color: #545454;
 }
 
 .nav__pets {
   border-bottom: 3px #F1CDB3 solid;
+  color: #292929;
 }
 
 @media (max-width: 1279px) {
