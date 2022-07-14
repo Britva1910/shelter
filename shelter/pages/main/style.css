@@ -615,6 +615,7 @@ h3 {
 }
 
 .footer-inner__title {
+  width: 290px;
   margin-top: 55px;
   font-family: Georgia;
   font-size: 3.5rem;
@@ -724,7 +725,7 @@ h3 {
 }
 
 .logo__main {
-  margin-bottom: 10px;
+  margin-bottom: -5px;
   font-family: Georgia;
   font-size: 3.2rem;
   font-style: normal;

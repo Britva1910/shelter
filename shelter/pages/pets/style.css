@@ -672,6 +672,7 @@ h3 {
 }
 
 .footer-inner__title {
+  width: 290px;
   margin-top: 55px;
   font-family: Georgia;
   font-size: 3.5rem;
