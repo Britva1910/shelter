@@ -23,6 +23,7 @@ export const getPopUp = (event) => {
     </div>
     </div>
     `;
+
     document.getElementById('body').classList.add('no-scroll');
 
     document.getElementById('body').append(popUp);

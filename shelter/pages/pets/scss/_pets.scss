@@ -69,22 +69,19 @@
     @include font($family: Georgia, $size: 2.0rem, $weight: normal);
     line-height: 115%;
     color: #CDCDCD;
-    &:nth-child(1) {
-        border: 2px solid #CDCDCD;
-    }
-    &:nth-child(2) {
-        border: 2px solid #CDCDCD;
-    }
     &:nth-child(3) {
         background: #F1CDB3;
         color: $color-black;
     }
-    &:nth-child(4) {
-        color: $color-black;
-    }
-    &:nth-child(5) {
-        color: $color-black;
-    }
+ }
+.btn__disabled {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+}
+
+.btn__enabled{
+    border: 2px $color-primary solid;
+    color: $color-black;
 }
 
 .btn__hover {
@@ -110,6 +107,7 @@
     >img {
         margin-bottom: 30px;
         border-radius: 9px 9px 0 0;
+        object-fit: cover;
     }
     &:hover {
         background-color: $color-light;

@@ -6,7 +6,7 @@ const overlay = document.getElementById('menu');
 export const body = document.getElementById('body');
 const header = document.querySelector('header');
 
-
+console.log('hi');
 export const activeBurgerMenu = () => {
     header.style.position = "static";
     burgerMenu.classList.toggle('rotate');

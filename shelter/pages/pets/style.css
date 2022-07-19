@@ -733,24 +733,18 @@ h3 {
   color: #CDCDCD;
 }
 
-.pets__btn:nth-child(1) {
-  border: 2px solid #CDCDCD;
-}
-
-.pets__btn:nth-child(2) {
-  border: 2px solid #CDCDCD;
-}
-
 .pets__btn:nth-child(3) {
   background: #F1CDB3;
   color: #292929;
 }
 
-.pets__btn:nth-child(4) {
-  color: #292929;
+.btn__disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
 }
 
-.pets__btn:nth-child(5) {
+.btn__enabled {
+  border: 2px #F1CDB3 solid;
   color: #292929;
 }
 
@@ -791,6 +785,8 @@ h3 {
 .pets__card > img {
   margin-bottom: 30px;
   border-radius: 9px 9px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pets__card:hover {
