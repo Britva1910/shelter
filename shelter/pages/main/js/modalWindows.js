@@ -32,4 +32,4 @@ export const getPopUp = (event) => {
         popUp.remove();
         document.getElementById('body').classList.remove('no-scroll');
     })
-}
+};

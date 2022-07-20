@@ -37,7 +37,7 @@
     }
     @include media-mobile {
         width: 240px;
-        height: 341px;
+        height: auto;
         left: calc(50% - 120px);
         top: calc(50% - 170px);
         display: flex;
@@ -62,6 +62,7 @@
         list-style: none;
         >li {
             margin: 5px 0;
+            word-wrap: break-word;
             @include media-tablet {
                 margin: 3px 0;
             }

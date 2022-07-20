@@ -10,14 +10,12 @@ const btnLast = document.getElementById('btn_last');
 
 const MEDIA_LAPTOP = 1280;
 const MEDIA_TABLET = 768;
-const MEDIA_MOBILE = 320;
 const WIDTH = document.documentElement.clientWidth;
 const { pages, cards } = getNumberPages(WIDTH);
 let currentSetCards;
 let indexCurrentPage = 0;
 
 function getNumberPages(WIDTH) {
-	console.log('WIDTH', WIDTH);
 	if (WIDTH > MEDIA_LAPTOP) {
 		return { pages: 6, cards: 8 };
 	} else if (WIDTH > MEDIA_TABLET) {
@@ -57,10 +55,10 @@ const getSetOfCards = (setNumbers) => {
 			const petsCard = document.createElement('div');
 			petsCard.innerHTML = `
 			<div class="pets__card" data-index="${pets[number].index}">
-			<img src="${pets[number].img}" class="card__image">
-					<div class="card__name">${pets[number].name}</div>
-					<button class=" button button-bordered card__btn">Learn more</button>
-				</div>
+			<img src="${pets[number].img}" class="card__image" alt="pets">
+				<div class="card__name">${pets[number].name}</div>
+				<button class=" button button-bordered card__btn">Learn more</button>
+			</div>
 			`;
 			petsCard.addEventListener('click', (event) => {
 				getPopUp(event);
@@ -79,7 +77,6 @@ const renderPetsCards = (setCards, pageNumber = 0) => {
 };
 
 export const initPagination = () => {
-	console.log('startPagination');
 	const setCardsNumbersFoPage = generatePseudorandomSetNumbers(pages, cards);
 	const setCards = getSetOfCards(setCardsNumbersFoPage);
 	renderPetsCards(setCards, 0);
